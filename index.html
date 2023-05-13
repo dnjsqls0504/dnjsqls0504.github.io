@@ -11,12 +11,24 @@
     </head>
     <body>
         <h3>
-            환영합니다! 20220366 임원빈의 홈페이지입니다.
+            환영합니다! 20220366 임원빈의 홈페이지입니다. 
         </h3>
+         
+        <img onmouseout="this.style.width='100px'" 
+             onmouseover="this.style.width='200px'" 
+             src="시간표 사진.png" width="100px">
+       
         
         <br>
 
-        <h3>시간표</h3>
+        <h3 id="time">시간표</h3>
+        <script>
+            function fune() {e=document.getElementById("time");
+                             e.style.color="yellow";}
+        </script>
+        <button type="button" onclick="fune()">눌러보시겠어요?</button>
+        <br>
+        <br>
     <table>
         <tr>
             <th>요일<br>시간</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th>
@@ -87,5 +99,11 @@
     <a href="월간 일정표.html">
         [월간 일정표]
     </a>
+
+    <hr>
+    <img id="hit" src="공 맞기 전 펠라이니.png" width='200px'>
+       <button onclick="document.getElementById('hit').src='공 맞은 펠라이니.png'">
+        으악..!</button>
+
     </body>
 </html>
