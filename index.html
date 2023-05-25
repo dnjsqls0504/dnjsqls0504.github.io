@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <style>
-            table, tr, th, td 
-            {border: solid 1px black;
+
+<head>
+ <meta charset="utf-8">
+<style>
+    .clear {clear: both;}
+    * {margin: 0; padding: 0; background-color: powderblue;}
+    header {width: 1917px; height: 150px; 
+           text-align: center; margin-top: 50px; font-size: 80px;
+           font-family:"굴림"; font-weight: bold;}
+    #head {border-left: solid 20px palevioletred; margin: 15px; padding-left: 20px;}
+    nav {width: 1917px; height: 50px; 
+        font-size: 30px; margin-top: 30px;
+        text-align: center; font-family: "굴림"; font-weight: bold;}
+    a:link {text-decoration: none;}
+    a:visited {text-decoration: none; color: palevioletred;}
+    a:hover {text-decoration: none; color: yellowgreen;}
+    #img {margin-bottom: 50px; margin-left: 0;}
+    aside {width: 500px; height: 1000px; 
+           margin-top: 200px; float: left;
+           text-align: center;}
+    section {width: 1300px; height: 1000px;
+           margin-top: 150px; float: left;} 
+    table, tr, th, td 
+            {border: solid 1px black; text-align: center;   
              border-collapse: collapse;
              padding: 8px;}
-        </style>
-    </head>
-    <body>
-        <h3>
-            환영합니다! 20220366 임원빈의 홈페이지입니다. 
-        </h3>
-         
-        <img onmouseout="this.style.width='100px'" 
-             onmouseover="this.style.width='200px'" 
-             src="시간표 사진.png" width="100px">
-       
-        
+    table {width: 1000px; height: 500px; margin-top: 30px; margin-left: 150px;}
+    th, td {width: 100px; padding: 5px; height: 60px;}
+    footer {width: 2000px; height: 150px; }
+    #insta {margin-left: 1700px;}
+    p {margin-left: 1670px;}
+    h3 {margin-bottom: 100px; text-align: center;}
+</style>
+</head>
+<body>
+<header>
+    <span id="head">임원빈의 홈페이지</span>
+    <nav>
+        <span id="img"><img src="img/가로 긴 사진 2.png" width="1950px" height="80px"></span>
         <br>
-
-        <h3 id="time">시간표</h3>
-        <script>
-            function fune() {e=document.getElementById("time");
-                             e.style.color="yellow";}
-        </script>
-        <button type="button" onclick="fune()">눌러보시겠어요?</button>
-        <br>
-        <br>
+        <a href="W02프로필.html">| 프로필</a>
+        <a href="W05 회원가입.html">| 회원가입</a>
+        <a href="루바토 펜션.html">| 루바토 펜션 안내</a>
+        <a href="호서 페스티벌.html">| 행사 안내</a>
+        <a href="호서 야간 개장.html">| 호서 야간 개장</a>
+        <a href="세일 안내장.html">| 세일 안내장</a>
+        <a href="월간 일정표.html">| 월간 일정표</a>
+        <a href="쇼핑 판매 목록.html">| 쇼핑몰 판매 목록 |</a>
+    </nav>
+</header>
+<aside>
+    <img src="img/내 사진.jpg" width="300px" height="300px">
+    <br><br><br>
+    <audio src="audio/웹사이트.mp3" controls autoplay loop></audio>
+    <br><br>
+    <br><br>
+    <img src="img/양.gif" width="300px" height="300px">
+    <br><br>
+    <br><br>
+    <img src="img/로고.png" width="100px" height="100px">
+</aside>
+<section>
     <table>
         <tr>
             <th>요일<br>시간</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th>
@@ -70,45 +103,13 @@
             <th>11교시(19:30-20:20)</th> <td></td> <td></td> <td></td> <td></td> <td>웹프로그래밍</td>
         </tr>
     </table>
-    <br>
-    <a href="W05 회원가입.html">
-        [회원가입]
-    </a>
-    <br>
-    <br>
-    <a href="루바토 펜션.html">
-        [루바토 펜션 안내]
-    </a>
-    <br>
-    <br>
-    <a href="호서 페스티벌.html">
-        [행사 안내]
-    </a>
-    <br>
-    <br>
-    <a href="호서 야간 개장.html">
-        [호서 야간 개장]
-    </a>
-    <br>
-    <br>
-    <a href="세일 안내장.html">
-        [세일 안내장]
-    </a>
-    <br>
-    <br>
-    <a href="월간 일정표.html">
-        [월간 일정표]
-    </a>
-    <br>
-    <br>
-    <a href="쇼핑 판매 목록.html">
-        [쇼핑몰 판매 목록]
-    </a>
+</section>
+<div class="clear"></div>
+<footer>
+<span id="insta"><a href="https://www.instagram.com/naebnow/"><img src="img/인스타 로고.png" width="100px" height="100px"></a></span>
+<p>[로고를 클릭해주세요.]</p>
+<h3>대표 : 임원빈<br>주소 : 천안시 동남구 안서동 | 고객센터 : 010-4075-3752</h3>
+</footer>
+</body>
 
-    <hr>
-    <img id="hit" src="공 맞기 전 펠라이니.png" width='200px'>
-       <button onclick="document.getElementById('hit').src='공 맞은 펠라이니.png'">
-        으악..!</button>
-
-    </body>
 </html>
