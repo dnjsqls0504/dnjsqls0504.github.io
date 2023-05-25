@@ -5,7 +5,7 @@
  <meta charset="utf-8">
 <style>
     .clear {clear: both;}
-    * {margin: 0; padding: 0; background-color: powderblue;}
+    * {margin: 0; padding: 0; background-color: rgb(160, 200, 204);}
     header {width: 1917px; height: 150px; 
            text-align: center; margin-top: 50px; font-size: 80px;
            font-family:"굴림"; font-weight: bold;}
@@ -32,6 +32,17 @@
     #insta {margin-left: 1700px;}
     p {margin-left: 1670px;}
     h3 {margin-bottom: 100px; text-align: center;}
+    #title {background-color: rgb(96, 174, 248);}
+    #day {background-color: rgb(96, 174, 248);}
+    #germany {background-color: rgb(233, 170, 205);}
+    #management {background-color: rgb(230, 243, 154);}
+    #marketing {background-color: rgb(204, 153, 252);}
+    #italy {background-color: rgb(240, 120, 120);}
+    #english {background-color: rgb(255, 195, 104);}
+    #amen {background-color: rgb(224, 149, 120);}
+    #web {background-color: rgb(147, 148, 245);}
+    #ai {background-color: rgba(92, 173, 103, 0.986);}
+    #star{margin-left: 10px;}
 </style>
 </head>
 <body>
@@ -64,28 +75,28 @@
 <section>
     <table>
         <tr>
-            <th>요일<br>시간</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th>
+            <th id="title">요일<br>시간</th> <th id="day">월</th> <th id="day">화</th> <th id="day">수</th> <th id="day">목</th> <th id="day">금</th>
         </tr>
         <tr>
             <th>1교시(09:30-10:20)</th> <td></td> <td></td> <td></td> <td></td> <td></td>
         </tr>
         <tr>
-            <th>2교시(10:30-11:20)</th> <td rowspan="2">초급생활독일어</td> <td></td>
-            <td></td> <td></td> <td rowspan="2">웹프로그래밍</td>
+            <th>2교시(10:30-11:20)</th> <td id="germany" rowspan="2">초급생활독일어</td> <td></td>
+            <td></td> <td></td> <td id="web" rowspan="2">웹프로그래밍</td>
         </tr>
         <tr>
-            <th>3교시(11:30-12:20)</th> <td></td> <td rowspan="2">경영정보<br>시스템</td> <td rowspan="2">대학영어회화2</td>
+            <th>3교시(11:30-12:20)</th> <td></td> <td id="management" rowspan="2">경영정보<br>시스템</td> <td id="english" rowspan="2">대학영어회화2</td>
         </tr>
         <tr>
             <th>4교시(12:30-13:20)</th> <td></td> <td></td> <td></td>
         </tr>
         <tr>
-            <th>5교시(13:30-14:20)</th> <td>경영정보시스템</td> 
-            <td rowspan="2">이탈토탈<br>(이탈리아<br>문화기행)</td> <td></td> <td>마케팅의이해</td> 
-            <td rowspan="3">AI시대의<br>인간과사회<br>(팀티칭)</td>
+            <th>5교시(13:30-14:20)</th> <td id="management">경영정보시스템</td> 
+            <td id="italy" rowspan="2">이탈토탈<br>(이탈리아<br>문화기행)</td> <td></td> <td id="marketing">마케팅의이해</td> 
+            <td id="ai" rowspan="3">AI시대의<br>인간과사회<br>(팀티칭)</td>
         </tr>
         <tr> 
-            <th>6교시(14:30-15:20)</th> <td rowspan="2">마케팅의<br>이해</td> <td>채플</td> <td></td> 
+            <th>6교시(14:30-15:20)</th> <td id="marketing" rowspan="2">마케팅의<br>이해</td> <td id="amen">채플</td> <td></td> 
         </tr>
         <tr>
             <th>7교시(15:30-16:20)</th> <td></td> <td></td> <td></td> 
@@ -100,9 +111,11 @@
             <th>10교시(18:30-19:20)</th> <td></td> <td></td> <td></td> <td></td> <td></td>
         </tr>
         <tr>
-            <th>11교시(19:30-20:20)</th> <td></td> <td></td> <td></td> <td></td> <td>웹프로그래밍</td>
+            <th>11교시(19:30-20:20)</th> <td></td> <td></td> <td></td> <td></td> <td id="web">웹프로그래밍</td>
         </tr>
     </table>
+    <br><br>
+    <span id="star"><img src="img/밤하늘.png" width="1150px" height="200px"></span>
 </section>
 <div class="clear"></div>
 <footer>
