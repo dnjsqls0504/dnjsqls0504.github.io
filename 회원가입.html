@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>회원가입</title>
+<style>
+   #p {float: left;}  #p1 {text-align: center;}
+    a:visited {text-decoration: none; color: black;}
+a:hover { text-decoration: none; color:blue} 
+a:link {text-decoration: none; color:black }
+    #page {margin: 0 auto; width: 500px; }
+    #button{width: 300px;
+             height: 50px;
+             margin: 5px 0 0 0px;
+             color: white;
+             background-color: gray;
+             text-align: center;
+             font-size: bold;
+          border-radius: 5px; }
+    footer {border-top: solid 2px black; width: 500px; height: 300px;  font-size: 20px; text-align: center; padding-top: 25px;  }
+    header {text-align:center; width: 500px; height: 700px; padding-top:50px; margin-top: 10px; border: solid 2px black; 
+        margin-left: 450px; }
+</style>
+</head>
+<body>
+    <header>
+    <h1>회원가입</h1>
+    <br>
+    <p><b>이름</b> &nbsp; <input type="name" style="width:200px;height:30px;font-size: 15px;" ><br></p>
+    <p><b>아이디</b> &nbsp; <input type="name" style="width:200px;height: 30px;font-size: 15px;"><br></p>
+    <p><b>비밀번호</b> &nbsp; <input type="password" style="width:200px;height: 30px;font-size: 15px;"><br></p>
+    <p><b>이메일</b> &nbsp; <input type="name" style="width:200px;height: 30px;font-size: 15px;"></p>
+     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @ <select style="width:200px;height: 30px;font-size: 15px;"><option>선택</option>
+        <option>naver.com</option> <option>gmail.com</option> <option>hanmail.com</option> <option>kakao.com</option></select><br></p>
+    <p><b>전화번호</b> &nbsp; <input type="name" style="width:200px;height: 30px;font-size: 15px;"><br></p>
+ <form action="로그인.html">
+   <p id="p1"><button type="submit" id="button"onclick="alert('회원가입이 완료되었습니다!')"> 가입하기 </button></p></form>
+    
+       <footer>
+          이미 회원이신가요? &nbsp; <b> <a href="로그인.html">로그인하기</a></b>
+        </footer>
+
+    </header>
+
+</body>
+</html>
