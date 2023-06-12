@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            table, tr, th, td 
+            {border: solid 1px black;
+             border-collapse: collapse;
+             padding: 8px;}
+        </style>
+    </head>
+    <body>
+        <h3>
+            환영합니다! 20220366 임원빈의 홈페이지입니다. 
+        </h3>
+         
+        <img onmouseout="this.style.width='100px'" 
+             onmouseover="this.style.width='200px'" 
+             src="시간표 사진.png" width="100px">
+       
+        
+        <br>
+
+        <h3 id="time">시간표</h3>
+        <script>
+            function fune() {e=document.getElementById("time");
+                             e.style.color="yellow";}
+        </script>
+        <button type="button" onclick="fune()">눌러보시겠어요?</button>
+        <br>
+        <br>
+    <table>
+        <tr>
+            <th>요일<br>시간</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th>
+        </tr>
+        <tr>
+            <th>1교시(09:30-10:20)</th> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+            <th>2교시(10:30-11:20)</th> <td rowspan="2">초급생활독일어</td> <td></td>
+            <td></td> <td></td> <td rowspan="2">웹프로그래밍</td>
+        </tr>
+        <tr>
+            <th>3교시(11:30-12:20)</th> <td></td> <td rowspan="2">경영정보<br>시스템</td> <td rowspan="2">대학영어회화2</td>
+        </tr>
+        <tr>
+            <th>4교시(12:30-13:20)</th> <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+            <th>5교시(13:30-14:20)</th> <td>경영정보시스템</td> 
+            <td rowspan="2">이탈토탈<br>(이탈리아<br>문화기행)</td> <td></td> <td>마케팅의이해</td> 
+            <td rowspan="3">AI시대의<br>인간과사회<br>(팀티칭)</td>
+        </tr>
+        <tr> 
+            <th>6교시(14:30-15:20)</th> <td rowspan="2">마케팅의<br>이해</td> <td>채플</td> <td></td> 
+        </tr>
+        <tr>
+            <th>7교시(15:30-16:20)</th> <td></td> <td></td> <td></td> 
+        </tr>
+        <tr>
+            <th>8교시(16:30-17:20)</th> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+            <th>9교시(17:30-18:20)</th> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+            <th>10교시(18:30-19:20)</th> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+            <th>11교시(19:30-20:20)</th> <td></td> <td></td> <td></td> <td></td> <td>웹프로그래밍</td>
+        </tr>
+    </table>
+    <br>
+    <a href="W05 회원가입.html">
+        [회원가입]
+    </a>
+    <br>
+    <br>
+    <a href="루바토 펜션.html">
+        [루바토 펜션 안내]
+    </a>
+    <br>
+    <br>
+    <a href="호서 페스티벌.html">
+        [행사 안내]
+    </a>
+    <br>
+    <br>
+    <a href="호서 야간 개장.html">
+        [호서 야간 개장]
+    </a>
+    <br>
+    <br>
+    <a href="세일 안내장.html">
+        [세일 안내장]
+    </a>
+    <br>
+    <br>
+    <a href="월간 일정표.html">
+        [월간 일정표]
+    </a>
+    <br>
+    <br>
+    <a href="쇼핑 판매 목록.html">
+        [쇼핑몰 판매 목록]
+    </a>
+
+    <hr>
+    <img id="hit" src="공 맞기 전 펠라이니.png" width='200px'>
+       <button onclick="document.getElementById('hit').src='공 맞은 펠라이니.png'">
+        으악..!</button>
+
+    </body>
+</html>
